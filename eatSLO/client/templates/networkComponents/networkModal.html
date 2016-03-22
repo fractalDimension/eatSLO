@@ -1,0 +1,25 @@
+<template name="networkModal">
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            {{#if Template.subscriptionsReady}}
+                {{#with currentProfile}}
+                    <div class="modal-header">
+                        <h4 class="modal-title">{{currentProfile.name}}</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Owner: {{profile.owner}}</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                {{/with}}
+            {{else}}
+                <p>Loading...</p>
+            {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

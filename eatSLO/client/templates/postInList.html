@@ -1,0 +1,11 @@
+<template	name="postInList">
+	<div class="postListItem panel panel-default">
+		<div class="panel-body">
+			<h2><a href="posts/{{slug}}">{{title}}</a></h2>
+		<p>{{description}}</p>
+		</div>
+		<div class="panel-footer">
+			<time datetime="{{formatTime timeCreated "iso"}}">Posted {{formatTime timeCreated "fromNow"}} by {{author}}</time>
+		</div>
+	</div>
+</template>

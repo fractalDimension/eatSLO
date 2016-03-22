@@ -1,0 +1,13 @@
+<template name="network">
+	<div class="container-fluid">
+		<div>
+			<h1>Network</h1>
+			{{> networkFilter}}
+			<div class="row">
+  				{{#each networkCardList}}
+					{{> networkCard}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

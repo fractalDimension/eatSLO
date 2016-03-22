@@ -1,0 +1,21 @@
+<template name='ethereum'>
+{{#markdown}}
+##	Ethereum Functions
+This page is a collection of functions that interact with the local(for now) instance of the block chain. Soon it will interact with the live net.
+{{/markdown}}
+
+<!--
+<pre>{{currentBlock}}</pre>
+-->
+{{primaryAccount}}
+
+<form class="account-lookup">
+	<input type="text" name="text" placeholder="Enter an account hex" />
+</form>
+
+{{#with singleProfile}}
+	{{> sloCoinProfile}}
+{{/with}}
+
+
+</template>

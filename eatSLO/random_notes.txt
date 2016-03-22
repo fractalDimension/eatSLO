@@ -1,0 +1,19 @@
+Things to do:
+
+mess with pub/sub to see why 
+
+cant modiify _id myself.... let mongo do that
+
+Meteor.publish("all-accounts", function(city, type) {
+	return SloAccounts.find(queryConstructor(city, type));
+});
+
+"all-accounts", Session.get('cityFilter'), Session.get('typeFilter')
+
+
+Meteor._sleepForMs(2000);
+
+
+
+
+
