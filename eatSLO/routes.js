@@ -58,11 +58,11 @@ Router.map(function()	{
     this.route('Network',  {
         path:   '/network',
         template:   'network',
-        /*
+        
         subscriptions: function(){
             return Meteor.subscribe("filtered-results", Session.get('cityFilter'), Session.get('typeFilter'));
         }
-        */
+        
     });
 
 	this.route('Ethereum',	{

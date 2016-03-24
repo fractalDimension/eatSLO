@@ -5,9 +5,11 @@ Template.network.helpers({
 	}
 });
 
+/*
 Template.network.onCreated(function(){
 	Meteor.subscribe('test-profile');
 });
+*/
 /*
 ALL THESE EVENTS AND SESSION SETTER NEED TO BE MOVED INTO networkFilter EVENTS!!!!!
 */
