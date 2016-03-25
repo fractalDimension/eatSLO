@@ -30,6 +30,9 @@ Meteor.startup(function(){
 				slug: 'bliss-cafe',
 				city: 'San Luis Obispo',
 				accountType: 'preparer',
+				//test moving these to a sub-object (might cause trouble with reactivity)
+				lat: 35.279858,
+				lng: -120.663549,
 				profile: 
 				{
 					address: '123 Higuera st',
@@ -77,6 +80,8 @@ Meteor.startup(function(){
 				slug: "linaeas",
 				city: 'San Luis Obispo',
 				accountType: 'preparer',
+				lat: 35.279123,
+				lng: -120.663250,
 				profile: 
 				{
 					address: '475 Garden st',

@@ -24,7 +24,9 @@ Meteor.publish("filtered-results", function(city, type) {
 			name: 1,
 			city: 1,
 			"profile.description": 1,
-			accountType: 1
+			accountType: 1,
+			lat: 1,
+			lng: 1
 		}
 	});
 });
