@@ -1,44 +1,45 @@
 <template name="networkFilter">
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="row-fluid">
-				<div class="col-md-3">
-					<h4>Location:</h4>
-					<div class="control-group">
-    					<div class="controls">
-        					<div class="input">
-            					<div class="btn-group" data-toggle="buttons-checkbox">
-                					<button class="btn" id="slo-toggle">SLO</button>
-                					<button class="btn" id="osos-toggle">Los Osos</button>
-                					<button class="btn" id="avila-toggle">Avila</button>
-            					</div>
-        					</div>
-    					</div>
-    				</div>
-				</div>
-				<div class="col-md-3">
-					<h4>Groups:</h4>
-					<div class="control-group">
-    					<div class="controls">
-        					<div class="input">
-            					<div class="btn-group" data-toggle="buttons-checkbox">
-                					<button class="btn" id="grower-toggle">Growers</button>
-                					<button class="btn" id="supplier-toggle">Suppliers</button>
-                					<button class="btn" id="preparer-toggle">Preparers</button>
-            					</div>
-        					</div>
-    					</div>
-    				</div>
-					<button id="toggle-all" class="btn btn-info">Toggle All</button>
-				</div>
+	<div class="panel-group">
+      <div class="panel panel-default">
+         <div class="panel-body">
+            <div class="row-fluid">
+               <div class="col-md-3">
+                  <h4>Location:</h4>
+                  <div class="control-group">
+                     <div class="controls">
+                        <div class="input">
+                           <div class="btn-group" data-toggle="buttons-checkbox">
+                              <a class="btn btn-primary waves-effect waves-light" id="slo-toggle">SLO</a>
+                              <a class="btn btn-default waves-effect waves-light" id="osos-toggle">Los Osos</a>
+                              <a class="btn btn-default waves-effect waves-light" id="avila-toggle">Avila</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            <div class="col-md-3">
+               <h4>Groups:</h4>
+               <div class="control-group">
+                  <div class="controls">
+                     <div class="input">
+                        <div class="btn-group" data-toggle="buttons-checkbox">
+                           <a class="btn btn-default waves-effect waves-light" id="grower-toggle">Growers</a>
+                           <a class="btn btn-default waves-effect waves-light" id="supplier-toggle">Suppliers</a>
+                           <a class="btn btn-default waves-effect waves-light" id="preparer-toggle">Preparers</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button id="toggle-all" class="btn btn-info">Toggle All</button>
+            </div>
                 <div>
                     <h4>Description:</h4>
                     <p>This is where we describe te things. Its really informative.</p>
                 </div>
-			</div>
-			
-			
-			
-		</div>
-	</div>
+         </div>
+      </div>
+   </div>
+</div>
+
+    
 </template>

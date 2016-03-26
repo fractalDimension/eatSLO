@@ -57,8 +57,9 @@ Meteor.startup(function(){
 				name: 'Chumash Farms',
 				slug: 'chumash-farms',
 				city: 'Los Osos',
-				//does this need square brackets to make it an array?
 				accountType: 'grower',
+				lat: 35.322514,
+				lng: -120.830992,
 				profile: 
 				{
 					address: '647 Main st',
@@ -107,6 +108,8 @@ Meteor.startup(function(){
 				slug: 'cal-poly-organic-farm',
 				city: 'San Luis Obispo',
 				accountType: 'grower',
+				lat: 35.298402,
+				lng: -120.670819,
 				profile: 
 				{
 					address: 'Cal Poly Campus',
@@ -128,6 +131,8 @@ Meteor.startup(function(){
 				slug: 'see-canyon-fruit-ranch',
 				city: 'Avila',
 				accountType: 'grower',
+				lat: 35.211889,
+				lng: -120.724289,
 				profile: 
 				{
 					address: '2345 See Canyon Road',
@@ -149,6 +154,8 @@ Meteor.startup(function(){
 				slug: 'bear-creek-ranch',
 				city: 'Los Osos',
 				accountType: 'supplier',
+				lat: 35.280563,
+				lng: -120.783978,
 				profile: 
 				{
 					address: '3698 clark valley rd',
@@ -170,6 +177,8 @@ Meteor.startup(function(){
 				slug: 'good-tides',
 				city: 'Los Osos',
 				accountType: 'supplier',
+				lat: 35.327639,
+				lng: -120.840564,
 				profile: 
 				{
 					address: '1326 2nd Street, Baywood Park ',

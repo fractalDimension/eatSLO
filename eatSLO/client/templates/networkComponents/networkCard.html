@@ -1,13 +1,21 @@
 <template name="networkCard">
-	<div class="col-sm-6 col-md-3">
-    	<div class="thumbnail" style="border-color: {{borderColor}}">
-      		<img class="img-rounded" src="/images/slo-pic.JPG" alt="...">
-      		<div class="caption">
-        		<h3><a href="#" id="card-name">{{name}}</a></h3>
-        		<p>{{profile.description}}</p>
-        		<p>{{accountType}}</p>
+   <div class="col-sm-6 col-md-3">
+      <div class="card hoverable">
+         <div class="card-image">
+            <div class="view overlay hm-white-slight z-depth-1">
+               <img src="/images/slo-pic.JPG" class="img-responsive" alt="">
+               <div class="mask waves-effect"></div>
+            </div>
+            <span class="card-title">{{name}}</span>
+         </div>
+         <div class="card-content">
+            <p>{{profile.description}}</p>
+            <p>{{accountType}}</p>
             <p>{{city}}</p>
-      		</div>
-    	</div>
+         </div>
+         <div class="card-action">
+            <a>This is a link</a>
+         </div>
+      </div>
   	</div>
 </template>
