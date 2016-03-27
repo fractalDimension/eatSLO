@@ -1,24 +1,25 @@
 <template name="home">
-	<div class="row">
-		<div class="col-md-12">
-			<a href="#" class="thumbnail">
-      			<img src="/images/slo-pic.JPG" alt="San Luis Obispo">
-    		</a>
-		</div>
-	</div>
-	{{#markdown}}
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12">
+            <a href="#" class="thumbnail">
+               <img src="/images/slo-pic.JPG" alt="San Luis Obispo">
+            </a>
+         </div>
+      </div>
+   {{#markdown}}
 ##	Welcome	to	Eat SLO
 This will be the home of the Web3.0 DApp (Distributed Application). For not it lives on my local machine courtesy of Meteor.
-	{{/markdown}}
+      {{/markdown}}
 
-	{{#if currentUser.roles.admin}}
-		<a href="/create-post" class="createNewPost">Create new post</a>
-	{{/if}}
+      {{#if currentUser.roles.admin}}
+         <a href="/create-post" class="createNewPost">Create new post</a>
+      {{/if}}
 
-	{{#each postsList}}
-		{{> postInList}}
-	{{/each}}
+      {{#each postsList}}
+         {{> postInList}}
+      {{/each}}
 
-<button	class="lazyload">Load more</button>
-
+   <button	class="lazyload">Load more</button>
+   </div>
 </template>

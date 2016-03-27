@@ -27,11 +27,10 @@
          </div>
       </nav>
 
-      <div class="container-fluid">
-         <main>
-            {{>   yield}}
-         </main>
-      </div>
+      <main>
+         <!-- Where each page is rendered via IronRouter-->
+         {{>   yield}}
+      </main>
    </body>
    
 </template>
