@@ -24,6 +24,7 @@ queryConstructor = function (cityNameArray, typeNameArray) {
 		// example of finished query
 		//{ city: { $in: ['San Luis Obispo', 'Avila'] } } 
 	};
+	//dont add if empty array
 	if (typeNameArray.length > 0){ 
 		var typeObject = new Object();
 		typeObject.$in = typeNameArray;

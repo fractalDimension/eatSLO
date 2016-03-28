@@ -4710,6 +4710,7 @@ $(".smooth-scroll").on('click', 'a', function (event) {
 }));
 /* ROTATING CARDS */
 $('.rotate-btn').on('click', function () {
+	console.log("trying to flip");
     var cardId = $(this).attr('data-card');
     $('#' + cardId).toggleClass('flipped');
 
@@ -5773,6 +5774,8 @@ function scaleBannerVideoSize(element){
 }));
 /* SCROLLING NAVBAR */
 //jQuery to collapse the navbar on scroll
+/*
+// eatSLO is removing this feature
 $(window).scroll(function () {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -5780,6 +5783,7 @@ $(window).scroll(function () {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
 });
+*/
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function () {

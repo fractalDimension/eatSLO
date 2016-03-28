@@ -42,7 +42,10 @@ Template.networkMap.helpers({
     if (GoogleMaps.loaded()) {
       return {
         center: new google.maps.LatLng(35.281694, -120.659695),
-        zoom: 15
+        zoom: 15,
+        zoomControl: false,
+        streetViewControl: false,
+        mapTypeControl: false,
       };
     }
   }

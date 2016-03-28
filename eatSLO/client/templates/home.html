@@ -1,15 +1,8 @@
 <template name="home">
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col-md-12">
-            <a href="#" class="thumbnail">
-               <img src="/images/slo-pic.JPG" alt="San Luis Obispo">
-            </a>
-         </div>
-      </div>
+   <div>
    {{#markdown}}
 ##	Welcome	to	Eat SLO
-This will be the home of the Web3.0 DApp (Distributed Application). For not it lives on my local machine courtesy of Meteor.
+This site is still in an early development stage. The last time it was deployed: 3/27/16
       {{/markdown}}
 
       {{#if currentUser.roles.admin}}
@@ -20,6 +13,6 @@ This will be the home of the Web3.0 DApp (Distributed Application). For not it l
          {{> postInList}}
       {{/each}}
 
-   <button	class="lazyload">Load more</button>
+      <button	class="lazyload btn btn-default">Load more</button>
    </div>
 </template>
