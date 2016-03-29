@@ -2,7 +2,7 @@ Template.networkMap.onCreated(function()
 {
    GoogleMaps.ready('map', function(map) 
    {
-      console.log("I'm ready!");
+      console.log("Map ready!");
 
       // place to store map markers
       var markers = {};
@@ -19,7 +19,17 @@ Template.networkMap.onCreated(function()
                animation: google.maps.Animation.DROP,
                position: new google.maps.LatLng(document.lat, document.lng),
                map: map.instance,
-               id: document._id
+               id: document._id,
+               info: '<h2>' + document.name + '<h2>' + '<br />' + '<a data-toggle="collapse" data-target="#collapseNetworkCard">Open Card</a>'
+            });
+
+            var infoWindow = new google.maps.InfoWindow();
+
+            google.maps.event.addListener( marker, 'click', function() 
+            {
+              Session.set("activeCardId", document._id);
+              infoWindow.setContent( this.info );
+              infoWindow.open( map.instance, this );
             });
 
             markers[document._id] = marker;
@@ -34,6 +44,9 @@ Template.networkMap.onCreated(function()
             delete markers[oldDocument._id];
          }   
       });
+
+      
+
    });
 });
 

@@ -1,0 +1,23 @@
+<template name="networkCardDetail">
+   <div class="collapse" id="collapseNetworkCard">
+      <div class="col-sm-6 col-md-3">
+         <div class="card hoverable">
+            <div class="card-image">
+               <div class="view overlay hm-white-slight z-depth-1">
+                  <img src="/images/slo-pic.JPG" class="img-responsive" alt="">
+                  <div class="mask waves-effect"></div>
+               </div>
+               <span class="card-title">{{activeCard.name}}</span>
+            </div>
+            <div class="card-content">
+               <p>{{activeCard.profile.description}}</p>
+               <p>{{activeCard.accountType}}</p>
+               <p>{{activeCard.city}}</p>
+            </div>
+            <div class="card-action">
+               <a data-toggle="collapse" data-target="#collapseNetworkCard">Close Card</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</template>

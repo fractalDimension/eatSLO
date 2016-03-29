@@ -12319,22 +12319,29 @@ function (e) {
     }(window.jQuery || window.Zepto || window, window, document)
 });/* Buttons */
 
+/* eatSLO modified to open button on click instead of hover*/
 (function ($) {
     $(document).ready(function () {
 
         // jQuery reverse
         $.fn.reverse = [].reverse;
 
-        $(document).on('mouseenter.fixedActionBtn', '.fixed-action-btn', function (e) {
+        $(document).on('click.fixedActionBtn', '.fixed-action-btn', function (e) {
             var $this = $(this);
-            openFABMenu($this);
-
+            if ($this.hasClass('openMenu') === false) {
+            	openFABMenu($this);
+            	$this.addClass('openMenu');
+            } else {
+            	closeFABMenu($this);
+            	$this.removeClass('openMenu');
+            }
         });
-
+        /*
         $(document).on('mouseleave.fixedActionBtn', '.fixed-action-btn', function (e) {
             var $this = $(this);
             closeFABMenu($this);
         });
+        */
 
     });
 
