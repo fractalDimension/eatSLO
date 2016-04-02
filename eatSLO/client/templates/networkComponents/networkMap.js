@@ -44,15 +44,15 @@ Template.networkMap.onCreated(function()
             delete markers[oldDocument._id];
          }   
       });
-
-      
-
    });
 });
 
-Template.networkMap.helpers({  
-  mapOptions: function() {
-    if (GoogleMaps.loaded()) {
+Template.networkMap.helpers(
+{  
+  mapOptions: function() 
+  {
+    if (GoogleMaps.loaded()) 
+    {
       return {
         center: new google.maps.LatLng(35.281694, -120.659695),
         zoom: 15,

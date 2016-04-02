@@ -1,18 +1,21 @@
 <template name="home">
-   <div>
-   {{#markdown}}
-##	Welcome	to	Eat SLO
+   <div class="container-fluid">
+      <div>
+         {{#markdown}}
+## Welcome  to Eat SLO
 This site is still in an early development stage. The last time it was deployed: 3/27/16
-      {{/markdown}}
+         {{/markdown}}
 
-      {{#if currentUser.roles.admin}}
-         <a href="/create-post" class="createNewPost">Create new post</a>
-      {{/if}}
+         {{#if currentUser.roles.admin}}
+            <a href="/create-post" class="createNewPost">Create new post</a>
+         {{/if}}
 
-      {{#each postsList}}
-         {{> postInList}}
-      {{/each}}
+         {{#each postsList}}
+            {{> postInList}}
+         {{/each}}
 
-      <button	class="lazyload btn btn-default">Load more</button>
+         <button  class="lazyload btn btn-default">Load more</button>
+      </div>
    </div>
+   
 </template>

@@ -1,8 +1,11 @@
-Meteor.methods({
-	insertPost: function(postDocument) {
+Meteor.methods(
+{
+	insertPost: function(postDocument) 
+	{
 		if(this.isSimulation) {
 			Session.set('saveButton', 'Saving...');
-		} else {
+		} else 
+		{
 			var user = Meteor.user();
 
 			//ensure user logged in

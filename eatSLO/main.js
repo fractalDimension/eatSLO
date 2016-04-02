@@ -1,22 +1,26 @@
 // #Users and permissions -> Adding the accounts packages
-Accounts.config({
+Accounts.config(
+{
     forbidClientAccountCreation: true
 });
 
 // # Users and Permissions -> Adding permissions
-if(Meteor.isClient) {
+if(Meteor.isClient) 
+{
     Meteor.subscribe("userRoles");
 }
 
 
 //this is to protect against malicious queries
-queryConstructor = function (cityNameArray, typeNameArray) {
+queryConstructor = function (cityNameArray, typeNameArray) 
+{
 	//create empty parameter that would return all results
 	var parameters = {};
 
 	
 	//dont add if empty array
-	if (cityNameArray.length > 0){ 
+	if (cityNameArray.length > 0)
+	{ 
 		var cityObject = new Object();
 		cityObject.$in = cityNameArray;
 		//the city dot notation protects the query
@@ -25,7 +29,8 @@ queryConstructor = function (cityNameArray, typeNameArray) {
 		//{ city: { $in: ['San Luis Obispo', 'Avila'] } } 
 	};
 	//dont add if empty array
-	if (typeNameArray.length > 0){ 
+	if (typeNameArray.length > 0)
+	{ 
 		var typeObject = new Object();
 		typeObject.$in = typeNameArray;
 

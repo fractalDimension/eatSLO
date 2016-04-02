@@ -1,8 +1,0 @@
-development:
-  GuessNumber:
-    args:
-      - 79
-staging:
-  GuessNumber:
-    args:
-      - 79

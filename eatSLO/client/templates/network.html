@@ -1,16 +1,9 @@
 <template name="network">
-   
-   {{> networkCardDetail}}
+   <div class="container-full">
+      {{> networkCardDetail}}
 
-   {{> networkMap options=mapOptions}}
+      {{> networkMap options=mapOptions}}
 
-   {{> networkFilterButton}}
-
-   <!--
-   <div class="row">
-      {{#each networkCardList}}
-         {{> networkCard}}
-      {{/each}}
+      {{> networkFilterButton}}
    </div>
-   -->
 </template>

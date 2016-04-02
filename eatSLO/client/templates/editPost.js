@@ -1,13 +1,17 @@
 Session.setDefault('saveButton', 'Save Post');
 
-Template.editPost.helpers({
-	saveButtonText: function(){
+Template.editPost.helpers(
+{
+	saveButtonText: function()
+	{
 		return Session.get('saveButton');
 	}
 });
 
-Template.editPost.events({
-	'submit form': function(e, tmpl){
+Template.editPost.events(
+{
+	'submit form': function(e, tmpl)
+	{
 		e.preventDefault();
 		var form = e.target,
 			_this = this,
@@ -15,14 +19,15 @@ Template.editPost.events({
 
 		var slug = _.slugify(form.title.value);
 
-		if(this._id) {
-
-			Posts.update(this._id, {$set: {
+		if(this._id) 
+		{
+			Posts.update(this._id, {$set: 
+				{
 				title: 			form.title.value,
 				description: 	form.description.value,
 				text: 			form.text.value,
-			
-			}}, function(error) {
+				}
+			}, function(error) {
 				if(error) {
 					// display the error to the user
 					alert(error.reason);
